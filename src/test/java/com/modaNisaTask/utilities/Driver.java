@@ -1,4 +1,4 @@
-package com.vytrack.utilities;
+package com.modaNisaTask.utilities;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -70,7 +70,7 @@ public class Driver {
 
     public static void closeDriver() {
         if (driver != null) {
-            driver.quit();
+            driver.close();
             driver = null;
         }
     }

@@ -23,6 +23,9 @@ public class  BasePage {
     @FindBy(xpath = "//input[@class='toggle']")
     public WebElement checkboxElement;
 
+    @FindBy(xpath = "//ul[@class='todo-list']//li")
+    public WebElement checkedElement;
+
     public BasePage() {
 
         PageFactory.initElements(Driver.get(), this);
@@ -39,11 +42,13 @@ public class  BasePage {
         BrowserUtils.waitFor(2);
     }
     public List<WebElement> viewElement() {
-        List<WebElement> viewEls=Driver.get().findElements(By.xpath("//li/div/label"));
-         return viewEls;
+        return Driver.get().findElements(By.xpath("//li/div/label"));
     }
     public void setCheckboxElement(){
        checkboxElement.click();
         BrowserUtils.waitFor(3);
     }
+    public String checkedElementDone(){
+        return checkedElement.getAttribute("class");
     }
+}

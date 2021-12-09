@@ -9,9 +9,7 @@ import java.util.Properties;
 public class ConfigurationReader {
 
     private static Properties properties;
-
     static {
-
         try {
             String path = "configuration.properties";
             FileInputStream input = new FileInputStream(path);
@@ -26,9 +24,6 @@ public class ConfigurationReader {
     }
 
     public static String get(String keyName) {
-
-
         return properties.getProperty(keyName);
     }
-
 }

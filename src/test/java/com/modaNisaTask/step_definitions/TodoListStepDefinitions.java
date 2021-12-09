@@ -14,13 +14,14 @@ public class TodoListStepDefinitions {
     BasePage sendEl=new BasePage();
     BasePage viewEl=new BasePage();
     BasePage checkBox=new BasePage();
+    BasePage checkedEl=new BasePage();
     @Given("Empty ToDo list")
     public void empty_ToDo_list() {
         Driver.get().get(ConfigurationReader.get("url"));
         BasePage emptyPage=new BasePage();
         emptyPage.emptyList();
     }
-    @When("I write {string} to <text box> and press <enter>")
+    @When("I write {string} to text box and press enter")
     public void i_write_to_text_box_and_press_enter(String string) {
         sendEl.sendByObject(string);
     }
@@ -43,13 +44,14 @@ public class TodoListStepDefinitions {
             Assert.assertEquals(string,viewEl.viewElement().get(1).getText());
         }
     }
-    @When("I click on <checkbox> next to {string} item")
+    @When("I click on checkbox next to {string} item")
         public void i_click_on_checkbox_next_to_item(String string) {
          checkBox.setCheckboxElement();
          System.out.println(string+" is clicked");
     }
     @Then("I should see {string} item marked as DONE")
     public void i_should_see_item_marked_as_DONE(String string) {
-    //devam edecem
+        Assert.assertEquals("todo completed",checkedEl.checkedElementDone());
+        Assert.assertEquals(string,checkedEl.checkedElement.getText());
     }
 }

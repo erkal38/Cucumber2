@@ -12,6 +12,7 @@ public class Hooks {
     @Before
     public void setUp(){
         System.out.println("\tHello");
+        Driver.get().manage().window().maximize();
 
     }
     @After

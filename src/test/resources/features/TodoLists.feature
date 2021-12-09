@@ -1,5 +1,3 @@
-
-
 Feature: Users should be able to see TodoList
   @add
   Scenario:

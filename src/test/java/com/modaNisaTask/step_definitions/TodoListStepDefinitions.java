@@ -15,6 +15,7 @@ public class TodoListStepDefinitions {
     BasePage viewEl=new BasePage();
     BasePage checkBox=new BasePage();
     BasePage checkedEl=new BasePage();
+
     @Given("Empty ToDo list")
     public void empty_ToDo_list() {
         Driver.get().get(ConfigurationReader.get("url"));
@@ -38,16 +39,15 @@ public class TodoListStepDefinitions {
     }
     @Then("I should see {string} item inserted to ToDo list below {string}")
     public void i_should_see_item_inserted_to_ToDo_list_below(String string, String string2) {
-        if(viewEl.viewElement().get(0).getText().equals(string2)){
-            System.out.println("0.index "+ string2);
-        }else if(viewEl.viewElement().get(1).getText().equals(string)){
-            Assert.assertEquals(string,viewEl.viewElement().get(1).getText());
-        }
+        System.out.println("0.index "+ string2);
+        BrowserUtils.waitFor(2);
+        Assert.assertEquals(string,viewEl.viewElement().get(1).getText());
+        System.out.println("1.index "+string);
     }
     @When("I click on checkbox next to {string} item")
-        public void i_click_on_checkbox_next_to_item(String string) {
-         checkBox.setCheckboxElement();
-         System.out.println(string+" is clicked");
+    public void i_click_on_checkbox_next_to_item(String string) {
+        checkBox.setCheckboxElement();
+        System.out.println(string+" is clicked");
     }
     @Then("I should see {string} item marked as DONE")
     public void i_should_see_item_marked_as_DONE(String string) {

@@ -2,33 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9faed5fe-68c7-44a2-8bb9-8c78c8b6ccbe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/step_definitions/TodoListStepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/todoLists.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/CalendarEventsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/ContactInfoPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/ContactsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/CreateCalendarEventsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/DashboardPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/pages/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/runners/CukesRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/runners/FailedTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/runners/FailedTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/ContactsStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/step_definitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/LoginStepDefinitions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/step_definitions/NavigationMenuStepDefs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/utilities/BrowserUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/ConfigurationReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/utilities/ConfigurationReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/vytrack/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountsTypes.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Contacts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Contacts.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginWithParameters.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/NavigationMenu.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/step_definitions/TodoListStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/step_definitions/TodoListStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/utilities/BrowserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/modaNisaTask/utilities/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/todoLists.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/TodoLists.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +100,19 @@
       <option name="presentableId" value="Default" />
       <updated>1594482269911</updated>
     </task>
+    <task id="LOCAL-00001" summary="modaNisa">
+      <created>1638973890074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638973890090</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="modaNisa" />
+    <option name="LAST_COMMIT_MESSAGE" value="modaNisa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1638968593119">
@@ -132,30 +123,38 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="114" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1638946238810" />
-    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1638946613109">
+    <state x="413" y="114" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1639036856900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1638946613109" />
+    <state x="413" y="114" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1639036856900" />
+    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1638973888679">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1638973888679" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1638973860251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1638973860251" />
-    <state width="1322" height="167" key="GridCell.Tab.0.bottom" timestamp="1638973761374">
+    <state width="1322" height="167" key="GridCell.Tab.0.bottom" timestamp="1639053600254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="167" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1638973761374" />
-    <state width="1322" height="167" key="GridCell.Tab.0.center" timestamp="1638973761374">
+    <state width="1322" height="167" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1639053600254" />
+    <state width="1322" height="167" key="GridCell.Tab.0.center" timestamp="1639053600254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="167" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1638973761374" />
-    <state width="1322" height="167" key="GridCell.Tab.0.left" timestamp="1638973761374">
+    <state width="1322" height="167" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1639053600254" />
+    <state width="1322" height="167" key="GridCell.Tab.0.left" timestamp="1639053600254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="167" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1638973761374" />
-    <state width="1322" height="167" key="GridCell.Tab.0.right" timestamp="1638973761374">
+    <state width="1322" height="167" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1639053600254" />
+    <state width="1322" height="167" key="GridCell.Tab.0.right" timestamp="1639053600254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="167" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1638973761374" />
+    <state width="1322" height="167" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1639053600254" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1638973926109">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1638973926109" />
     <state x="392" y="120" width="585" height="488" key="find.popup" timestamp="1638967603918">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

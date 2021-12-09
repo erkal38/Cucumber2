@@ -20,8 +20,8 @@ public class  BasePage {
     @FindBy(xpath = "//header/input[1]")
     public WebElement sendElementToList;
 
-    @FindBy(xpath = "//li/div/label")
-    public WebElement viewElementToDoList;
+    @FindBy(xpath = "//input[@class='toggle']")
+    public WebElement checkboxElement;
 
     public BasePage() {
 
@@ -38,8 +38,12 @@ public class  BasePage {
         sendElementToList.sendKeys(Keys.ENTER);
         BrowserUtils.waitFor(2);
     }
-    public String viewElement() {
-       return viewElementToDoList.getText();
+    public List<WebElement> viewElement() {
+        List<WebElement> viewEls=Driver.get().findElements(By.xpath("//li/div/label"));
+         return viewEls;
     }
-
+    public void setCheckboxElement(){
+       checkboxElement.click();
+        BrowserUtils.waitFor(3);
+    }
     }

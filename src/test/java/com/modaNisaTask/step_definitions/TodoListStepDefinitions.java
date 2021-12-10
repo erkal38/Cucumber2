@@ -8,6 +8,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 
 public class TodoListStepDefinitions {
@@ -15,6 +21,9 @@ public class TodoListStepDefinitions {
     BasePage viewEl=new BasePage();
     BasePage checkBox=new BasePage();
     BasePage checkedEl=new BasePage();
+    BasePage deleteEl=new BasePage();
+    BasePage stringEl=new BasePage();
+    BasePage emptyEl=new BasePage();
 
     @Given("Empty ToDo list")
     public void empty_ToDo_list() {
@@ -29,7 +38,6 @@ public class TodoListStepDefinitions {
     @Then("I should see {string} item in ToDo list")
     public void i_should_see_item_in_ToDo_list(String string) {
         Assert.assertEquals(string,viewEl.viewElement().get(0).getText());
-
     }
     @Given("ToDo list with {string} item")
     public void todo_list_with_item(String string) {
@@ -52,6 +60,51 @@ public class TodoListStepDefinitions {
     @Then("I should see {string} item marked as DONE")
     public void i_should_see_item_marked_as_DONE(String string) {
         Assert.assertEquals("todo completed",checkedEl.checkedElementDone());
+        System.out.println(checkedEl.checkedElementDone());
         Assert.assertEquals(string,checkedEl.checkedElement.getText());
+        System.out.println(checkedEl.checkedElement.getText());
     }
-}
+    @Given("ToDo list with marked item")
+    public void todo_list_with_marked_item() {
+        Driver.get().get(ConfigurationReader.get("url"));
+        BrowserUtils.waitFor(2);
+        sendEl.sendByObject("buy some milk");
+        checkBox.setCheckboxElement();
+        Assert.assertEquals("todo completed",checkedEl.checkedElementDone());
+    }
+    @When("I click on checkbox next to item")
+    public void i_click_on_checkbox_next_to_item() {
+        checkBox.setCheckboxElement();
+        BrowserUtils.waitFor(2);
+    }
+    @Then("I should see {string} item marked as UNDONE")
+    public void i_should_see_item_marked_as_UNDONE(String string) {
+        Assert.assertEquals("todo",checkedEl.checkedElementDone());
+        System.out.println(checkedEl.checkedElementDone());
+        Assert.assertEquals(string,checkedEl.checkedElement.getText());
+        System.out.println(checkedEl.checkedElement.getText()+" is marked as UNDONE");
+    }
+    @When("I click on delete button next to {string} item")
+    public void i_click_on_delete_button_next_to_item(String string) {
+        Actions action=new Actions(Driver.get());
+        action.moveToElement(stringEl.deleteElement).perform();
+        BrowserUtils.waitFor(2);
+        Assert.assertEquals(stringEl.deleteElement.getText(),string);
+        deleteEl.deleteButton();
+    }
+    @Then("List should be empty")
+    public void list_should_be_empty() {
+        emptyEl.setEmptyListElement();
+    }
+    @Given("ToDo list with following items in order")
+    public void todo_list_with_following_items_in_order(List<String>string) {
+        Driver.get().get(ConfigurationReader.get("url"));
+        sendEl.sendEleList(string);
+        List<String> terms = new ArrayList<>();
+        for(int i=0;i<string.size();i++){
+            String str1=sendEl.viewElement().get(i).getText();
+            terms.add(str1);
+        }
+        Assert.assertEquals(string,terms);
+    }
+    }

@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue= "com/modaNisaTask/step_definitions",  //to look for the step_definitions
         dryRun = false,
         strict = true,
-        tags = "@add"
+        tags = "@add1"
 
 )
 public class CukesRunner {

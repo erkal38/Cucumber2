@@ -30,8 +30,8 @@ public class TodoListStepDefinitions {
         BasePage emptyPage=new BasePage();
         emptyPage.emptyList();
     }
-    @When("I write {string} to text box and press enter")
-    public void i_write_to_text_box_and_press_enter(String string) {
+    @When("I write to {string} and press enter")
+    public void i_write_to_and_press_enter(String string) {
         sendEl.sendByObject(string);
     }
     @Then("I should see {string} item in ToDo list")

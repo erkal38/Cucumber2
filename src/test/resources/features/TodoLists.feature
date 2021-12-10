@@ -1,16 +1,22 @@
 Feature: Users should be able to see TodoList
 
-  @add
-  Scenario: One item in ToDo list
+  @add1
+  Scenario Outline: One item in ToDo list
     Given Empty ToDo list
-    When I write "buy some milk" to text box and press enter
+    When I write to "<textbox>" and press enter
     Then I should see "buy some milk" item in ToDo list
+    Examples:
+      | textbox       |
+      | buy some milk |
 
   @add
-  Scenario:Second item in ToDo list
+  Scenario Outline:Second item in ToDo list
     Given ToDo list with "buy some milk" item
-    When I write "enjoy the assignment" to text box and press enter
+    When I write to "<textbox>" and press enter
     Then I should see "enjoy the assignment" item inserted to ToDo list below "buy some milk"
+    Examples:
+      | textbox              |
+      | enjoy the assignment |
 
   @add
   Scenario:Check one item in ToDo list

@@ -1,6 +1,6 @@
 Feature: Users should be able to see TodoList
 
-  @add1
+  @add
   Scenario Outline: One item in ToDo list
     Given Empty ToDo list
     When I write to "<textbox>" and press enter

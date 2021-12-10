@@ -2,17 +2,14 @@ package com.modaNisaTask.step_definitions;
 
 import com.modaNisaTask.pages.BasePage;
 import com.modaNisaTask.utilities.BrowserUtils;
-import com.modaNisaTask.utilities.ConfigurationReader;
 import com.modaNisaTask.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 

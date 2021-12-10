@@ -1,5 +1,6 @@
 package com.modaNisaTask.step_definitions;
 
+import com.modaNisaTask.utilities.ConfigurationReader;
 import com.modaNisaTask.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -12,6 +13,7 @@ public class Hooks {
     @Before
     public void setUp(){
         System.out.println("\tHello");
+        Driver.get().get(ConfigurationReader.get("url"));
         Driver.get().manage().window().maximize();
 
     }

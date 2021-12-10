@@ -27,7 +27,6 @@ public class TodoListStepDefinitions {
 
     @Given("Empty ToDo list")
     public void empty_ToDo_list() {
-        Driver.get().get(ConfigurationReader.get("url"));
         BasePage emptyPage=new BasePage();
         emptyPage.emptyList();
     }
@@ -41,7 +40,6 @@ public class TodoListStepDefinitions {
     }
     @Given("ToDo list with {string} item")
     public void todo_list_with_item(String string) {
-        Driver.get().get(ConfigurationReader.get("url"));
         BrowserUtils.waitFor(2);
         sendEl.sendByObject(string);
     }
@@ -66,7 +64,6 @@ public class TodoListStepDefinitions {
     }
     @Given("ToDo list with marked item")
     public void todo_list_with_marked_item() {
-        Driver.get().get(ConfigurationReader.get("url"));
         BrowserUtils.waitFor(2);
         sendEl.sendByObject("buy some milk");
         checkBox.setCheckboxElement();
@@ -98,7 +95,6 @@ public class TodoListStepDefinitions {
     }
     @Given("ToDo list with following items in order")
     public void todo_list_with_following_items_in_order(List<String>string) {
-        Driver.get().get(ConfigurationReader.get("url"));
         sendEl.sendEleList(string);
         List<String> terms = new ArrayList<>();
         for(int i=0;i<string.size();i++){

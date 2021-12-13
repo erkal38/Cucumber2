@@ -79,7 +79,6 @@ public class TodoListStepDefinitions {
     @Then("I should see {string} item marked as UNDONE")
     public void i_should_see_item_marked_as_UNDONE(String string) {
         Assert.assertEquals("todo",checkedEl.checkedElementDone());
-        System.out.println(checkedEl.checkedElementDone());
         Assert.assertEquals(string,checkedEl.checkedElement.getText());
         System.out.println(checkedEl.checkedElement.getText()+" is marked as UNDONE");
     }

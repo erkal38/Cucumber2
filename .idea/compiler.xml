@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Cucumber2" />
         <module name="EU2Cucumber2Selenium" />
       </profile>
     </annotationProcessing>

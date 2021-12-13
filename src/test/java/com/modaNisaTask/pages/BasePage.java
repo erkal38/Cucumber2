@@ -33,9 +33,6 @@ public class  BasePage {
     @FindBy(css = ".main")
     public WebElement emptyListElement;
 
-    @FindBy(css = "todo-list")
-    public WebElement inOrderElements;
-
     public BasePage() {
 
         PageFactory.initElements(Driver.get(), this);

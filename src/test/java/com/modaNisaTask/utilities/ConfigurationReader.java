@@ -24,7 +24,8 @@ public class ConfigurationReader {
     }
 
     public static String get(String keyName) {
-
+        //System.out.println(properties.getProperty(keyName));
         return properties.getProperty(keyName);
+
     }
 }

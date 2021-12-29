@@ -3,10 +3,7 @@ package com.modaNisaTask.pages;
 import com.modaNisaTask.utilities.BrowserUtils;
 import com.modaNisaTask.utilities.Driver;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -34,8 +31,7 @@ public class  BasePage {
     public WebElement emptyListElement;
 
     public BasePage() {
-
-        PageFactory.initElements(Driver.get(), this);
+        PageFactory.initElements(Driver.get(),this);
     }
     public void emptyList() {
         Dimension actualResult=anyItemList.getSize();
@@ -49,6 +45,7 @@ public class  BasePage {
         BrowserUtils.waitFor(2);
     }
     public List<WebElement> viewElement() {
+
         return Driver.get().findElements(By.xpath("//li/div/label"));
     }
     public void setCheckboxElement(){
@@ -56,6 +53,7 @@ public class  BasePage {
         BrowserUtils.waitFor(3);
     }
     public String checkedElementDone(){
+
         return checkedElement.getAttribute("class");
     }
     public void deleteButton(){
